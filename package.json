@@ -14,11 +14,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "homepage": "https://soufianeisnotafunction.github.io/react-todo/",
+    "homepage": "https://soufianeisnotafunction.github.io/react-todo",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
