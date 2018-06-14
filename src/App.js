@@ -54,25 +54,14 @@ class App extends Component {
         clickDone={this.taskDoneHandler}
       />
     ));
-    return (
-      <div className="App">
+    return <div className="App">
         <Header />
-        <input
-          type="text"
-          value={this.state.inputvalue}
-          className='mb-4'
-          onChange={this.inputChangeHandler}
-        />
-        <button
-          type="submit"
-          className="btn btn-primary btn-sm"
-          onClick={this.addTodohandler}
-        >
+        <input type="text" value={this.state.inputvalue} className="mb-4" onChange={this.inputChangeHandler} />
+        <button type="submit" className="btn btn-outline-success btn-sm" onClick={this.addTodohandler}>
           Add new Todo
         </button>
         <ul>{renderTodos}</ul>
-      </div>
-    );
+      </div>;
   }
 }
 
