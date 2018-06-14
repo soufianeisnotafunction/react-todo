@@ -39,7 +39,6 @@ class App extends Component {
     const index = this.state.todos.findIndex(x => x.id === id);
     let todos = this.state.todos;
     todos[index].done = !todos[index].done;
-
     this.setState({
       todos
     });
@@ -61,9 +60,14 @@ class App extends Component {
         <input
           type="text"
           value={this.state.inputvalue}
+          className='mb-4'
           onChange={this.inputChangeHandler}
         />
-        <button type="submit" onClick={this.addTodohandler}>
+        <button
+          type="submit"
+          className="btn btn-primary btn-sm"
+          onClick={this.addTodohandler}
+        >
           Add new Todo
         </button>
         <ul>{renderTodos}</ul>
