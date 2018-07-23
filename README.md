@@ -1,1 +1,1 @@
-# Simple React Todo
+# Simple React Todo backed by Firestore
